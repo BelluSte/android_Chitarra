@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guitarbg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/SE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/corda_chitarra"
+        app:layout_constraintBottom_toTopOf="@+id/SA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/se" />
+
+    <ImageView
+        android:id="@+id/SA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/corda_chitarra"
+        app:layout_constraintBottom_toTopOf="@+id/SD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SE"
+        app:srcCompat="@drawable/sa" />
+
+    <ImageView
+        android:id="@+id/SD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/corda_chitarra"
+        app:layout_constraintBottom_toTopOf="@+id/SG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SA"
+        app:srcCompat="@drawable/sd" />
+
+    <ImageView
+        android:id="@+id/SG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/corda_chitarra"
+        app:layout_constraintBottom_toTopOf="@+id/SB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SD"
+        app:srcCompat="@drawable/sg" />
+
+    <ImageView
+        android:id="@+id/SB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/corda_chitarra"
+        app:layout_constraintBottom_toTopOf="@+id/Se6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SG"
+        app:srcCompat="@drawable/sb" />
+
+    <ImageView
+        android:id="@+id/Se6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/corda_chitarra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SB"
+        app:srcCompat="@drawable/se6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
